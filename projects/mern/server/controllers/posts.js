@@ -26,6 +26,14 @@ export const createPost = async (req, res) => {
     }
 }
 
+export const deleteAllPosts = async (req, res) => {
+    try {
+        const posts = await Post.deleteMany({ firstName: 'Jessica'});
+    } catch (error) {
+        res.status(404).json({ message: error.message });
+    }
+};
+
 /** READ */
 export const getFeedPosts = async (req, res) => {
     try {
