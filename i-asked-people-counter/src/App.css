@@ -40,3 +40,21 @@
 .read-the-docs {
   color: #888;
 }
+
+.people {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.people-name {
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+}
+
+.people-list {
+  display: flex;
+  justify-content: center;
+}
